@@ -7,6 +7,8 @@ if (isset($_POST['send_password'])) {
 
     $url = "www.jreylibrary.xyz/forgot_password/reset.php?selector=" .$selector. "&validator=" 
     .bin2hex($token);
+
+    $expires = date("u") + 1800;
 }
 
 
