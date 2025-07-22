@@ -13,10 +13,10 @@ $mail = new PHPMailer(true);
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 
-$mail->Host = "smtp.example.com";
+$mail->Host = "mail.jrey.co.ke";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
-$mail->Username = "your-user@example.com";
+$mail->Port = 465;
+$mail->Username = "noreply@jrey.co.ke";
 $mail->Password = "your-password";
 
 $mail->isHtml(true);
